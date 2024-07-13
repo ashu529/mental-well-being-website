@@ -1,0 +1,73 @@
+<!--booksessions.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Details</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			text-align: center;
+			padding: 50px;
+		}
+		
+		h1 {
+			margin-top: 0;
+		}
+		
+		p {
+			margin-bottom: 0;
+		}
+		
+		.payment-details {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			margin-top: 50px;
+			text-align: left;
+		}
+		
+		.pay-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		
+		.pay-button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Payment Details</h1>
+	<p>Please review the payment details for your online session:</p>
+	<div class="payment-details">
+		<p>Expert: John Doe</p>
+		<p>Date: May 31, 2024</p>
+		<p>Time: 10:00 AM - 11:00 AM</p>
+		<p>Duration: 1 hour</p>
+		<p>Price: $100</p>
+	</div>
+	
+    <button id="pay-button" class="pay-button">Pay</button>
+	<script>
+		function processPayment() {
+			// Add code here to process the payment
+			alert("Payment of $100 has been processed.");
+		}
+
+        const payButton = document.getElementById('pay-button');
+              
+              // Add a click event listener to the signup button
+              payButton.addEventListener('click', () => {
+                // Redirect to the signup page
+                window.location.href = 'payment.html';
+              });
+  
+	</script>
+</body>
+</html>
